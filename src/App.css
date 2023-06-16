@@ -1,38 +1,85 @@
-.App {
+.pgContainer{
+  font-family: 'Vazir', sans-serif;
+  background-color:#f4f0e3;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:-100px;
+  left:0px;
+  overflow-y: scroll;
+}
+.logoHeader{
+ text-align: center;
+}
+.logo{
+  height:96px;
+  width:106px;
+  margin-left: 26%;
+}
+.nameHeader{
   text-align: center;
+  vertical-align:text-top;
+}
+.nameText{
+  font-size:44px;
+  margin-left: 26%;
+}
+.welcomeText{
+  font-size:38px;
+  margin-left: 26%;
+}
+.Me{
+  height:216px;
+  width:206px;
+  float:right;
+  margin-right: 15%;
+  margin-top: .5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bodyContainer{
+margin-top: 2.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.resumeText{  
+  font-size:40px;
+  margin-left: 22%;}
+.resumeContainer{
+  margin-top: .5%;
+}
+.resume{
+  float: left;
+  margin-left: 6%;
+  height:1000px;
+  width:700px;
+}
+.aboutContainer{
+margin-left: 62%;
+margin-right: 12%;
+background-color: antiquewhite;
+height:768px;
+width:450px;
+} 
+.amParagraph{
+  margin-left: 2%;
+  font-size: 22px;
+}
+.contactContainer{
+  background-color: bisque;
+}
+.contactTextHeader{
+font-weight: bold;
+font-size: 30px;
+}
+hr.line{
+    border-top: 3px solid black;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .docContainer{
+    text-align:center;
+    margin-top:2%;
   }
-  to {
-    transform: rotate(360deg);
+  .document{
+    height:1000px;
+    width:700px;
   }
-}
+  .return{
+    font-size:28px;
+  }

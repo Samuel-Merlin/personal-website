@@ -1,24 +1,43 @@
+@font-face {
+  font-family: "SpaceMono-Regular.ttf";
+  src: local("SpaceMono-Regular.ttf"),
+    url("./fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
 .pgContainer{
-  font-family: 'Vazir', sans-serif;
-  background-color:#f4f0e3;
+  font-family: "SpaceMono-Regular.ttf";
+  background-image: url(./img/back.png);
   position:absolute;
   top:0px;
   right:0px;
   bottom:-100px;
   left:0px;
-  overflow-y: scroll;
+  background-size:contain;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 .logoHeader{
- text-align: center;
+
 }
+
 .logo{
-  height:96px;
-  width:106px;
-  margin-left: 26%;
+  float:right;
+  height:44px;
+  width:44px;
 }
-.nameHeader{
+.paragraph{
+  font-size: 34px;
+  word-break: none;
+  white-space: normal;
+  width:1000px;
   text-align: center;
-  vertical-align:text-top;
+  margin-left: 16%;
+
 }
 .nameText{
   font-size:44px;
@@ -29,11 +48,11 @@
   margin-left: 26%;
 }
 .Me{
-  height:216px;
-  width:206px;
+  height:316px;
+  width:306px;
   float:right;
-  margin-right: 15%;
-  margin-top: .5%;
+  margin-right: 20%;
+  margin-top: 3%;
 }
 
 .bodyContainer{

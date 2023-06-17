@@ -1,5 +1,8 @@
 
 import './App.css';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import { typography } from '@mui/system';
 import { Link } from 'react-router-dom';
 import logopng from './img/logopng.png';
 import me from './img/sam.png';
@@ -8,65 +11,101 @@ function HomePage() {
   return (
     <div className="pgContainer">
       <div className="logoHeader">
+        <Box
+          sx={{
+            m:1,
+            maxWidth:3000,
+            lineHeight:1.4,
+            fontSize: 32,
+            height: 48,
+            color:'darkcyan',
+            backgroundColor: 'black',
+            opacity: [0.9, 0.8, 0.7],
+      }}
+        >  
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;About Me
+          &nbsp;&nbsp;&nbsp;&nbsp;Resume
+          &nbsp;&nbsp;&nbsp;&nbsp;Achievements
+          &nbsp;&nbsp;&nbsp;&nbsp;Skills
+          &nbsp;&nbsp;&nbsp;Contact Me
           <img src={logopng} alt="Logo" className="logo"/>
-          <img src={me} alt="Myself" className="Me"/>
-            </div>
-              <div className="nameHeader">
-                <div className="nameText">Sam Merlin</div>
-                <div className="welcomeText">Welcome to my page!</div>
-                  </div>
-                    <div className="bodyContainer">
-                    <hr class ="line"></hr>
-                      <div className="resumeText">Resume&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Me</div>
-                          
-                            <div className="resumeContainer">
-                                <img src={resume} alt="Myself" className="resume"/>
-                                
-                              </div>
-                                <div className="aboutContainer">
-                                <p className="amParagraph">&nbsp;Hello,<br></br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;My name is Sam Merlin, and I am a cybersecurity enthusiast. 
-                                <br></br><br></br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;I understand that cybersecurity is a constantly changing landscape. I intend to adapt along with these changes. Thank you for taking the time to view this webpage, if you want to speak with me directly, please check out my contact information below.  
-                                <br></br><br></br>
-                                <hr class ="line"></hr>
-                                <div className="contactTextHeader">Achievements</div>
-                                <p><ul>
-                                    <li> B.A. Cybersecurity (2023) </li>
-                                    <li>3 Completed Projects</li>
-                                    <li>Sample Project <Link to="How To">How to purge data from NVMe SSD</Link></li>
-                                    <li> 3+ Years IT/Cybersecurity Experience</li>
-                                    <li>Eagle Scout (2019)</li>
-                                    
-                                  </ul>
-                                </p>
-                                <hr class ="line"></hr>
-                                <div className="contactTextHeader">Skills</div>
-                                <p><ul>
-                                    <li> Incident Response </li>
-                                    <li> Malware Analysis</li>
-                                    <li> NIST Documentation Review</li>
-                                    <li> Kali Linux</li>
-                                    <li> Python (Basic)</li>
-                                    <li> AWS, Microsoft AD, Google Firebase</li>
-                                  </ul>
-                                </p>
-                                <hr class ="line"></hr>
-                                  </p>
-                                  <div className="contactContainer">
-                                    <div className="contactTextHeader">Contact Me</div>
-                                      <p className="amParagraph">
-                                        Email:<a href="sammerlin019@gmail.com"> sammerlin019@gmail.com</a><br></br><br></br>
-                                        Mobile Phone: (412) 328-5208<br></br><br></br>
-                                        Linked In: <a href="https://www.linkedin.com/in/samuel-m-178720250/">Samuel M</a><br></br><br></br>
-                                      </p>
-                                  </div>
-                                  </div>
-                                </div>
-                              </div>
-
+        </p>
+    </Box>
+    </div>
+      <div className="bodyContainer">
+      <Box
+          sx={{
+            m:1,
+            lineHeight:1,
+            maxWidth:3000,
+            textAlign:'center',
+            fontSize: 65,
+            height: 645,
+            color:'hotpink',
+            backgroundColor: 'black',
+            opacity: [0.9, 0.8, 0.7],
+      }}
+        >
+        <img src={me} alt="Myself" className="Me"/>  
+        <br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Hi There!
+        <br></br><br></br><br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm Sam
+        <br></br><br></br>
+        <p className="paragraph">Welcome to my Website! I am a recent graduate with a degree in 
+        Cybersecurity, and an aptidute for learning. Please feel free 
+        to look around, and contact me if you want to get in touch!</p>
+    </Box>
+    <Box
+          sx={{
+            m:1,
+            maxWidth:3000,
+            fontSize: 45,
+            textAlign:'center',
+            height: 410,
+            color:'white',
+            backgroundColor: 'black',
+            opacity: [0.9, 0.8, 0.7],
+      }}
+        >
+        Contact Me
+        <p className="amParagraph">
+          Email:<a href="sammerlin019@gmail.com"> sammerlin019@gmail.com</a><br></br><br></br>
+          Mobile Phone: (412) 328-5208<br></br><br></br>
+          Linked In: <a href="https://www.linkedin.com/in/samuel-m-178720250/">Samuel M</a><br></br><br></br>
+        </p>
+        </Box>
+        <Box
+          sx={{
+            m:1,
+            maxWidth:3000,
+            fontSize: 45,
+            fontWeight:'bold',
+            height: 410,
+            color:'black',
+            backgroundColor: 'darkmagenta',
+            opacity: [0.9, 0.8, 0.7],
+      }}
+        >
+          &nbsp;&nbsp;Achievements
+          <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Grid item xs={5}>
+              <p>&nbsp;&nbsp;• B.A. Cybersecurity</p>
+            </Grid>
+            <Grid item xs={6}>
+              <p>&nbsp;&nbsp;&nbsp;• 3+ Completed Projects</p>
+            </Grid>
+            <Grid item xs={6}>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Sample Project <Link to="How To">Link</Link></p>
+            </Grid>
+            <Grid item xs={6}>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Eagle Scout (2019)</p>
+            </Grid>
+          </Grid>
+    </Box>
+  </div>
+  
+</div>
   );
 }
 export default HomePage;

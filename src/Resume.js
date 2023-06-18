@@ -2,8 +2,8 @@ import React from "react";
 import './App.css'
 import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
-import NVME from './img/NVMe.png'
-function Doc() {
+import resume from './img/SMResume.png';
+function Resume() {
     return (
     <div className="pgContainer">
         <div className="docContainer">
@@ -21,9 +21,9 @@ function Doc() {
                 >
                 <Link to="/">Return</Link>
             </Box>
-            <img src={NVME} alt="Myself" className="document"/>
+            <img src={resume} alt="Myself" className="document"/>
         </div>
     </div>
     )
 }
-export default Doc
+export default Resume

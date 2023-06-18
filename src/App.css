@@ -24,6 +24,14 @@
 .logoHeader{
 
 }
+.achievements{
+  font-size: 48px;
+  color:darkcyan;
+}
+.skills{
+    font-size: 48px;
+    color:darkcyan;
+}
 
 .logo{
   float:right;
@@ -70,24 +78,14 @@ margin-top: 2.5%;
   height:1000px;
   width:700px;
 }
-.aboutContainer{
-margin-left: 62%;
-margin-right: 12%;
-background-color: antiquewhite;
-height:768px;
-width:450px;
-} 
+
 .amParagraph{
   margin-left: 2%;
-  font-size: 22px;
+  font-size: 28px;
+  color: #FFC107;
 }
-.contactContainer{
-  background-color: bisque;
-}
-.contactTextHeader{
-font-weight: bold;
-font-size: 30px;
-}
+
+
 hr.line{
     border-top: 3px solid black;
   }
@@ -100,5 +98,6 @@ hr.line{
     width:700px;
   }
   .return{
-    font-size:28px;
+    font-size:58px;
+    color: blueviolet;
   }

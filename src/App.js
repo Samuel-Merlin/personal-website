@@ -1,13 +1,15 @@
-import React, {useState} from 'react';
-import { Routes, Route, useNavigate  } from "react-router-dom";
+import React from 'react';
+import { Routes, Route  } from "react-router-dom";
 import HomePage from './HomePage';
 import Doc from './Doc';
+import Resume from './Resume';
 
 function App() {
     return (
         <Routes>
           <Route path="/"  element={ <HomePage/> } />
           <Route path = "How To" element={<Doc/>} />
+          <Route path = "Resume" element={<Resume/>} />
         </Routes>
     )
   }
